@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1080px) {
+
+    .item-row {
+        height: 440px;
+        flex-direction: column;
+    }
+
+    .sub-row {
+        width: 100%;
+    }
+
+    .item-card .p-name {
+        max-width: 100%;
+        font-size: 14px !important;
+        text-align:start;
+        padding: 4px 10px;
+    }
+
+
+
+    .item-card .p-img img {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+.cart{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 540px){
+    .logo{
+        display: none;
+    }
+
+    .h-logo{
+        display: block;
+    }
+}

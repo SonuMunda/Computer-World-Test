@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Computer World.com</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="script/SidebarScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="h-inner-flex">
+                <div class="menubar" onclick="openSidebar()">
+                    <span class="bar">
+                        &#9776;
+                    </span>
+                </div>
+
+                <div class="logo">
+                    <a> <h2>
+                        Computer World
+                    </h2></a>
+                </div>
+                <div class="h-logo">
+                    <img src="img/logo.png" alt="Computer World">
+                </div>
+            </div>
+
+            <div class="searchbar">
+                <input type="text" id="s-txt">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="cart">
+                <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    cart
+                </a>
+            </div>
+
+
+    </header>
+
+    <!-- Sidebar Overlay -->
+
+    <div class="sidebar-overlay" id="s-overlay" onclick="closeSidebar()"></div>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+            <div class="al-box">
+                <div class="usr-avtar">
+                    <img src="img/avtar.png" alt="user"> <a href="#"><span class="usr-name"> Login & Signup </span></a>
+                </div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Computer World">
+                </div>
+            </div>
+            <div class="sidebar-links">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" onclick="toggleCompsMenu()">
+                            PC Components
+                        </a>
+                    </li>
+                    <div class="sub-menu" id="sub-comp-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Processor
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Motherboard
+                                </a>
+                            </li>
+                            <li><a href="#"> Graphics Card</a> </li>
+                            <li><a href="#"> RAM</a> </li>
+                            <li><a href="javascript:void(0)" onclick="toggleStorageMenu()"> Storage</a> </li>
+                            <div class="sub-menu" id="storage-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">SSD</a>
+                                    </li>
+
+                                    <li><a href="#">HDD</a></li>
+                                </ul>
+                            </div>
+                            <li><a href="#"> Cabinets</a> </li>
+                            <li><a href="#"> PSU</a> </li>
+                        </ul>
+                    </div>
+                    <li><a href="javascript:void(0)" onclick="toggleCPMenu()">
+                            Computer Peripheral
+                        </a></li>
+                        <div class="sub-menu" id="cp-menu">
+                            <ul>
+                                <li><a href="#">Monitor</a></li>
+                                <li><a href="#">Keyboard & Mouse</a></li>
+                                <li><a href="#">Pendrive</a></li>
+                                <li><a href="#">SD Card</a></li>
+                                <li><a href="#">USB Hub</a></li>
+                                <li><a href="#">Wifi Adapter</a></li>
+                                <li><a href="#">Printer/Scanner</a></li>
+                                <li><a href="#">Mouse Pad</a></li>
+                                <li><a href="#">Thermal Paste</a></li>
+                                <li><a href="#">CPU Cooler/Fan</a></li>
+                            </ul>
+                        </div>
+
+                        <li><a href="javascript:void(0)" onclick="toggleGZMenu()">Gaming Zone</a></li>
+
+                        <div class="sub-menu" id="gz-menu">
+                            <li><a href="#">Gaming Laptop</a></li>
+                            <li><a href="#">RGB Keyboard & Mouse</a></li>
+                            <li><a href="#">Gaming Chair </a></li>
+                            <li><a href="#">Headset</a></li>
+                            <li><a href="#">Game Pad</a></li>
+                            <li><a href="#">LED Strip</a></li>
+                        </div>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main-Slider -->
+    <div class="main-slider">
+        <div class="slider-container">
+            <div class="img-container">
+                <img src="https://rukminim1.flixcart.com/image/416/416/l02r1jk0/cabinet/x/n/s/v200-tempered-glass-rgb-edition-12v-mb-sync-capable-atx-original-imagbxvbgtsag4pr.jpeg?q=70"
+                    alt="Thermaltake V200 Tempered Glass RGB Edition ">
+            </div>
+            <div class="img-desc">
+                <div class="main-head">
+                    <h2>Flash Sale!</h2>
+                </div>
+                <div class="p-name"><b>Thermaltake V200 Tempered Glass RGB Edition</b></div>
+                <div class="price-avail"><b>Special Offer at</b></div>
+                <div class="p-price">&#8377; 3499 <del>5,999</del></div>
+                <div class="p-disc">30% off</div>
+                <div class="slider-btn"><button>Buy Now</button></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <section class="trending-items">
+        <div class="title">
+            <h1>Trending</h1>
+        </div>
+        <div class="item-container">
+            <div class="item-row" id="item-row-1">
+                <div class="sub-row" id="sub-row-1">
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/kxnl6kw0/monitor/r/z/m/vg279qr-full-hd-27-90lm04g0-b02310-asus-original-imaga25uqaxnhk26.jpeg?q=70"
+                                alt=""
+                                srcset="ASUS TUF 27 inch Full HD LED Backlit IPS Panel Gaming Monitor (VG279QR) ">
+                        </div>
+                        <div class="p-name"> <span class="name">ASUS TUF 27 inch Full HD LED Backlit IPS Panel Gaming
+                                Monitor (VG279QR)</span>
+                        </div>
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 31,499
+                            </span>
+
+                            <span class="desc-p">
+                                41,500
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/kdj4xow0/processor/h/b/e/intel-core-i3-9100f-9th-generation-original-imafuexjeqtgfsft.jpeg?q=70"
+                                alt="Intel Core i3-9100F ">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                Intel Core i3-9100F 9th Generation 3.6 GHz Processor
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 7,999
+                            </span>
+
+                            <span class="desc-p">
+                                10,000
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-row" id="sub-row-2">
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim2.flixcart.com/image/416/416/ke5zzbk0/internal-hard-drive/z/h/d/crucial-ct1000p1ssd8-original-imafuw9zn5jzpgmx.jpeg?q=70"
+                                alt="Crucial P1 1 TB Laptop, Desktop Internal Solid State Drive (CT1000P1SSD8)">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                Crucial P1 1 TB Laptop, Desktop Internal Solid State Drive (CT1000P1SSD8)
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 9,800
+                            </span>
+
+                            <span class="desc-p">
+                                15,000
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/ke5zzbk0/internal-hard-drive/b/a/u/crucial-ct480bx500ssd1-original-imafuw9zkzvp64bf.jpeg?q=70"
+                                alt="Crucial BX500 240 GB Laptop, Desktop Internal Solid State Drive">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                Crucial BX500 240 GB Laptop, Desktop Internal Solid State Drive
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 3,999
+                            </span>
+
+                            <span class="desc-p">
+                                5,999
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-row" id="item-row-2">
+                <div class="sub-row" id="sub-row-3">
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/kpft18w0/computer-acc-combo/g/m/d/rgb-bluefinger-87-keys-gaming-usb-wired-rainbow-keyboard-and-original-imag3zeuyvw2tyzz.jpeg?q=70"
+                                alt="MFTEK GAMING RGB 87 KEYS BLUEFINGER WIRED KEYBOARD AND BACKLITE MOUSE COMBO Wired USB Gaming Keyboard">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                MFTEK GAMING RGB 87 KEYS BLUEFINGER WIRED KEYBOARD AND BACKLITE MOUSE COMBO Wired USB
+                                Gaming Keyboard
+                            </span>
+                        </div>
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 2,799
+                            </span>
+
+                            <span class="desc-p">
+                                3,999
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/keykscw0-0/headphone/i/8/o/bassbud-q2-wired-boult-audio-original-imafvgmguqkucygh.jpeg?q=70"
+                                alt="Boult Audio Bass Bud Q2 Wired Headset">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">Boult Audio Bass Bud Q2 Wired Headset (Black, On the Ear)</span>
+
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 499
+                            </span>
+
+                            <span class="desc-p">
+                                2,499
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row" id="sub-row-3">
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://m.media-amazon.com/images/I/81T7eqKt+tL._SX679_.jpg"
+                                alt="Zotac GeForce GT 1030 2GB GDDR5 Graphics item-card with GeForce Experience 64-bit HDMI/DVI Low Profile 1468MHz Clock Speed 5">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                Zotac GeForce GT 1030 2GB GDDR5 Graphics item-card with GeForce Experience
+                                64-bit
+                                HDMI/DVI Low Profile 1468MHz Clock Speed 5
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 8,799
+                            </span>
+
+                            <span class="desc-p">
+                                10,999
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://m.media-amazon.com/images/I/61MmE5QS97L._SX450_.jpg"
+                                alt="MSI H310M PRO-VDH Plus for 9th Gen / 8th Gen Intel® Core™ / Pentium® Gold/Celeron® Processors for LGA 1151 Socket">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                MSI H310M PRO-VDH Plus for 9th Gen / 8th Gen Intel® Core™ / Pentium® Gold/Celeron®
+                                Processors for LGA 1151 Socket
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 7,499
+                            </span>
+
+                            <span class="desc-p">
+                                9,999
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-sellers-items">
+        <div class="title">
+            <h1>Best Sellers</h1>
+        </div>
+        <div class="item-container">
+            <div class="item-row">
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://m.media-amazon.com/images/I/81fbUyjzEmL._AC_UY327_FMwebp_QL65_.jpg"
+                                alt="AMD Ryzen 5 3500 Desktop Processor 6 Cores up to 4.1 GHz 19MB Cache AM4 Socket">
+                        </div>
+
+                        <div class="p-name">
+                            <span class="name">AMD Ryzen 5 3500 Desktop Processor 6 Cores up to 4.1 GHz 19MB Cache AM4
+                                Socket</span>
+                        </div>
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 12,469
+                            </span>
+
+                            <span class="desc-p">
+                                25,679
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kubk70w0/psu/j/y/d/ps-0006-frontech-original-imag7gt29fdehmgh.jpeg?q=70"
+                                alt="Frontech PS-0006 800 Watts PSU "></div>
+                        <div class="p-name">
+                            <span class="name">Frontech PS-0006 800 Watts PSU</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 1,499
+                            </span>
+
+                            <span class="desc-p">
+                                3,499
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://images-eu.ssl-images-amazon.com/images/I/31hxBAcIGgS._SY300_SX300_QL70_FMwebp_.jpg"
+                                alt="Crucial Basics 8GB DDR4 1.2v 2666Mhz CL19 UDIMM RAM Memory Module for Desktop">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">Crucial Basics 8GB DDR4 1.2v 2666Mhz CL19 UDIMM RAM Memory Module for
+                                Desktop</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 2,779
+                            </span>
+
+                            <span class="desc-p">
+                                4,499
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kzd147k0/cabinet/g/w/7/spark-2-0-artis-original-imagbdyk6myddznz.jpeg?q=70"
+                                alt="Artis SPARK 2.0 Full Tower Cabinet"></div>
+                        <div class="p-name">
+                            <span class="name">Artis SPARK 2.0 Full Tower Cabinet</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 1,499
+                            </span>
+
+                            <span class="desc-p">
+                                4,895
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-row">
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/ke7ff680/cooler/g/x/c/ant-esports-ants-v2-original-imafuxmfzbevfeyw.jpeg?q=70"
+                                alt="Ant Esports ANTS V2 Cooler  (RGB)"></div>
+                        <div class="p-name">
+                            <span class="name">
+                                Ant Esports ANTS V2 Cooler (RGB)
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 499
+                            </span>
+
+                            <span class="desc-p">
+                                1,299
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img src="https://m.media-amazon.com/images/I/61w+oqWwEnL._AC_UY218_.jpg"
+                                alt="Crucial Basics 8GB DDR4 1.2v 2666Mhz CL19 SODIMM RAM Memory Module for Laptops and Notebooks ">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+
+                                Crucial Basics 8GB DDR4 1.2v 2666Mhz CL19 SODIMM RAM Memory Module for
+                                Laptops and Notebooks
+                            </span>
+
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 3,499
+                            </span>
+
+                            <span class="desc-p">
+                                6,865
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kgzg8sw0/webcam/5/h/y/hp-webcam-w100-original-imafx2zjcgygm94x.jpeg?q=70"
+                                alt="HP w100 Webcam  (Black)"></div>
+                        <div class="p-name">
+                            <span class="name">
+                                HP w100 Webcam (Black)
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 999
+                            </span>
+
+                            <span class="desc-p">
+                                1,999
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kevpwnk0/computer-acc-combo/g/2/n/qhm-7403-222-wired-usb-mouse-keyboard-usb-4-port-hub-combo-3-original-imafvgfnyycswcbg.jpeg?q=70"
+                                alt="Quantum Hi-Tech QHM 7403/222 Wired USB Mouse, Keyboard & USB 4 Port Hub Combo Combo Set">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+
+                                Quantum Hi-Tech QHM 7403/222 Wired USB Mouse, Keyboard & USB 4 Port Hub
+                                Combo Combo Set
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 599
+                            </span>
+
+                            <span class="desc-p">
+                                1,999
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Best Value -->
+
+    <section class="best-value-items">
+        <div class="title">
+            <h1>Best Value</h1>
+        </div>
+        <div class="item-container">
+            <div class="item-row">
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/kdj4xow0/processor/h/b/e/intel-core-i3-9100f-9th-generation-original-imafuexjeqtgfsft.jpeg?q=70"
+                                alt="Intel Core i3-9100F ">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">Intel Core i3-9100F 9th Generation 3.6 GHz Processor</span>
+                        </div>
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 12,469
+                            </span>
+
+                            <span class="desc-p">
+                                25,679
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kziqvm80/motherboard/t/i/s/h510m-pro-e-h510-m-pro-e-msi-original-imagbg9wajkyffzu.jpeg?q=70"
+                                alt="Frontech PS-0006 800 Watts PSU "></div>
+                        <div class="p-name">
+                            <span class="name">MSI H510 M PRO-E Motherboard</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 7,990
+                            </span>
+
+                            <span class="desc-p">
+                                10,000
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://images-eu.ssl-images-amazon.com/images/I/31hxBAcIGgS._SY300_SX300_QL70_FMwebp_.jpg"
+                                alt="Crucial Basics 8GB DDR4 1.2v 2666Mhz CL19 UDIMM RAM Memory Module for Desktop">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">Crucial Basics 8GB DDR4 1.2v 2666Mhz CL19 UDIMM RAM Memory Module for
+                                Desktop</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 2,779
+                            </span>
+
+                            <span class="desc-p">
+                                4,499
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img">
+                            <img src="https://m.media-amazon.com/images/I/81T7eqKt+tL._SX679_.jpg"
+                                alt="Zotac GeForce GT 1030 2GB GDDR5 Graphics Card with GeForce Experience 64-bit HDMI/DVI Low Profile 1468MHz Clock Speed 5">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">Zotac GeForce GT 1030 2GB GDDR5 Graphics Card with GeForce Experience
+                                64-bit
+                                HDMI/DVI Low Profile 1468MHz Clock Speed 5</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 1,499
+                            </span>
+
+                            <span class="desc-p">
+                                4,895
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-row">
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kpk3csw0/keyboard/desktop-keyboard/n/2/u/judwaa-750-zebronics-original-imag3rubg55fvgz6.jpeg?q=70"
+                                alt="ZEBRONICS JUDWAA 750 / JUDWAA 750 Keyboard & Mouse Combo Wired USB Desktop Keyboard ">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                ZEBRONICS JUDWAA 750 / JUDWAA 750 Keyboard & Mouse Combo Wired USB Desktop
+                                Keyboard
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 499
+                            </span>
+
+                            <span class="desc-p">
+                                1,299
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kzd147k0/cabinet/t/i/z/frost-3-0-artis-original-imagbeywb7yhtvf2.jpeg?q=70"
+                                alt="Artis FROST 3.0 Mid Tower Cabinet "></div>
+                        <div class="p-name">
+                            <span class="name">
+                                Artis FROST 3.0 Mid Tower Cabinet
+                            </span>
+
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 3,499
+                            </span>
+
+                            <span class="desc-p">
+                                6,865
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/js4yljk0/internal-hard-drive/8/x/d/kingston-sa400s37-960gin-original-imafdrvk2yf6sqhr.jpeg?q=70"
+                                alt="KINGSTON A400 480 GB Laptop, Desktop Internal Solid State Drive (SA400S37/480G)">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                KINGSTON A400 480 GB Laptop, Desktop Internal Solid State Drive
+                                (SA400S37/480G)
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 999
+                            </span>
+
+                            <span class="desc-p">
+                                1,999
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/k02qnww0/monitor/s/z/c/22mp68vq-22mp68-lg-original-imafjy9zfwfnngna.jpeg?q=70"
+                                alt="LG 22 inch Full HD LED Backlit IPS Panel Monitor (22MP68VQ)  "></div>
+                        <div class="p-name">
+                            <span class="name">
+                                LG 22 inch Full HD LED Backlit IPS Panel Monitor (22MP68VQ)
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 599
+                            </span>
+
+                            <span class="desc-p">
+                                1,999
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- Newest - Products -->
+
+    <section class="newest-products">
+        <div class="title">
+            <h1>Best Value</h1>
+        </div>
+        <div class="item-container">
+            <div class="item-row">
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/ky4qgsw0/monitor/c/s/w/g27q-quad-hd-27-na-gigabyte-original-imagafgeshuzkjfd.jpeg?q=70"
+                                alt="Gigabyte 27 Inch Quad HD LED Backlit IPS Panel Gaming Monitor (G27Q) "></div>
+                        <div class="p-name">
+                            <span class="name">Gigabyte 27 Inch Quad HD LED Backlit IPS Panel Gaming Monitor (G27Q)
+                                (Response Time: 1 ms, 144 Hz Refresh Rate</span>
+                        </div>
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 12,469
+                            </span>
+
+                            <span class="desc-p">
+                                25,679
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/ky65wnk0/motherboard/x/b/y/pro-b660m-a-ddr4-pro-b660m-a-ddr4-msi-original-imagahfuwwgrkyyd.jpeg?q=70"
+                                alt="MSI PRO B660M-A DDR4 Motherboard"></div>
+                        <div class="p-name">
+                            <span class="name">MSI PRO B660M-A DDR4 Motherboard</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 7,990
+                            </span>
+
+                            <span class="desc-p">
+                                10,000
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/l01blow0/router/e/x/l/dlink-650-dlink-original-imagbwtzhagxqenn.jpeg?q=70"
+                                alt="Dlink DLINK_650 300 Mbps Router"></div>
+                        <div class="p-name">Dlink DLINK_650 300 Mbps Router</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 2,779
+                            </span>
+
+                            <span class="desc-p">
+                                4,499
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kzhbfrk0/printer/j/3/0/l3216-epson-original-imagbhfsuhc76mac.jpeg?q=70"
+                                alt="Epson L3216 Multi-function Color Printer"></div>
+                        <div class="p-name">
+                            <span class="name">Epson L3216 Multi-function Color Printer</span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 1,499
+                            </span>
+
+                            <span class="desc-p">
+                                4,895
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-row">
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kkoc70w0/graphics-card/6/f/w/radeon-rx-6800-gaming-x-trio-16g-msi-geforce-original-imafzypxmbmnsfxs.jpeg?q=70"
+                                alt="MSI AMD/ATI Radeon RX 6800 GAMING X TRIO 16G 16 GB GDDR6 Graphics Card  (Black)">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                MSI AMD/ATI Radeon RX 6800 GAMING X TRIO 16G 16 GB GDDR6 Graphics Card
+                                (Black)
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 499
+                            </span>
+
+                            <span class="desc-p">
+                                1,299
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kyxb9u80/processor/d/r/9/i5-12400f-intel-original-imagbfnzzgh8wb58.jpeg?q=70"
+                                alt="Intel I5-12400F 4.4 GHz Upto 4.4 GHz LGA1700 "></div>
+                        <div class="p-name">
+                            <span class="name">
+                                Intel I5-12400F 4.4 GHz Upto 4.4 GHz LGA1700 Socket 6 Cores 12 Threads
+                            </span>
+
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 3,499
+                            </span>
+
+                            <span class="desc-p">
+                                6,865
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sub-row">
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kxjav0w0/keyboard/gaming-keyboard/h/j/k/gaming-keyboard-and-mouse-combo-keyboard-with-7-color-backlit-original-imag9yu6a4gw7zm2.jpeg?q=70"
+                                alt="RPM Euro Games Gaming Keyboard and Mouse Combo | Keyboard - With 7 Color Backlit ">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                RPM Euro Games Gaming Keyboard and Mouse Combo | Keyboard - With 7 Color
+                                Backlit
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 999
+                            </span>
+
+                            <span class="desc-p">
+                                1,999
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="item-card">
+                        <div class="p-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/kgiaykw0/cabinet/n/d/u/netleaks-cooler-master-masterbox-k501l-rgb-mid-tower-gaming-original-imafwq7rf2kk757y.jpeg?q=70"
+                                alt="NetLeaks Cooler Master MasterBox K501L RGB Mid Tower Gaming Cabinet with Pre-Installed Fans and Tempered Glass Side">
+                        </div>
+                        <div class="p-name">
+                            <span class="name">
+                                NetLeaks Cooler Master MasterBox K501L RGB Mid Tower Gaming Cabinet with
+                                Pre-Installed Fans and Tempered Glass Side
+                            </span>
+                        </div>
+
+                        <div class="p-price">
+                            <span class="price">
+                                &#8377; 599
+                            </span>
+
+                            <span class="desc-p">
+                                1,999
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
